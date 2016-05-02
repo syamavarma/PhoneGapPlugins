@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+      id="com.syama.NativeUtils"
+      version="0.1.0">
+  <name>NativeUtils</name>
+  <description>NativeUtils plugin for Adobe Experience Manager Forms</description>
+  <license></license>
+  <keywords></keywords>
+  <repo></repo>
+  <issue></issue>
+
+  <js-module src="www/NativeUtils.js" name="NativeUtils">
+    <clobbers target="window.plugins.NativeUtils" />
+  </js-module>
+
+
+  <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NativeUtils" >
+                <param name="android-package" value="com.syama.NativeUtils"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/NativeUtils.java" target-dir="src/com/syama" />
+    </platform>
+
+</plugin>

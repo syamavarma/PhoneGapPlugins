@@ -1,0 +1,10 @@
+{
+  "name": "com.adobe.NativeUtils",
+  "version": "0.1.0",
+  "cordova": {
+	"id": "com.adobe.NativeUtils",
+	"platforms": [
+	  "android"
+    ]
+  }
+}
